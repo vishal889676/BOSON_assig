@@ -1,0 +1,19 @@
+<div>
+<button><a href="http://localhost:27017/addUser">Add user</a></button>
+<table class="table" border="">
+ <tr>
+  <th>name</th>
+  <th>email</th>
+  <th>Eddit</th>
+  <th>remove</th>
+ </tr>
+ <% for(let i = 0; i < user.length; i++) { %>
+ <tr>
+  <td><%= user[i].name %></td>
+  <td><%= user[i].name %></td></td>
+  <td><button><a href="http://localhost:27017/editUser/<%= user[i]._id %>">click_for_edit..</button></a></td>
+  <td><button><a href="http://localhost:27017/removeUser/<%= user[i]._id %>">click_for_remove..</button></a></td>
+ </tr>
+ <% } %>
+</table>
+</div>
